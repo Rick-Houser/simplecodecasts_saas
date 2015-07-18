@@ -1,6 +1,6 @@
 #DevMatch SaaS Project
 
-##[Project Link](http://codermanual.com)
+##[Details](https://codermanual.com/how-it-works/)
 
 ###Subscription-based Web Application with the following features:
 
