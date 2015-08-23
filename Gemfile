@@ -1,15 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
 
 gem 'rails', '4.2.3'
-gem "sqlite3", group: [:development, :test]
-
-group :production do
-  gem 'pg' 
-  gem 'rails_12factor'
-	gem 'puma', '~> 2.13.4'
-end
-
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'font-awesome-sass', '~> 4.3.0'
@@ -24,3 +15,15 @@ gem 'stripe', '>= 1.16.1'
 gem 'figaro', '>= 1.0.0'
 gem 'paperclip', '~> 4.2.1'
 gem 'autoprefixer-rails'
+
+group :development do
+  gem 'sqlite3' 
+end
+
+group :production do 
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'puma'
+end
+
+ruby "2.2.0"
